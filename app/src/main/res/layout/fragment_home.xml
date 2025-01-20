@@ -118,10 +118,9 @@
                     <!-- Organik -->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:background="@drawable/rectangle_organik"
-                        android:radius="16dp"
                         android:padding="16dp"
                         android:id="@+id/layoutOrganik"
                         android:layout_marginBottom="8dp">
@@ -133,7 +132,7 @@
                             android:gravity="center_vertical">
 
                             <TextView
-                                android:layout_width="0dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="ORGANIK"
