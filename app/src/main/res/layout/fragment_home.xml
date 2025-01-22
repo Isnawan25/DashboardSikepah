@@ -12,7 +12,7 @@
         android:background="@drawable/top_rectangle">
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/tvSikepah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SiKepah"
@@ -38,14 +38,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="64dp">
+        android:layout_marginTop="@dimen/_60sdp">
 
         <!-- Main Scrollable Content -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/bottomNavigationBar"
-            android:background="#F5F5DC"
+            android:background="@color/cream_bg"
+            android:layout_marginTop="@dimen/_5sdp"
             android:padding="16dp">
 
             <LinearLayout
@@ -325,6 +326,7 @@
                             android:text="Deskripsi sampah residu..."
                             android:textColor="#FFFFFF"
                             android:visibility="gone" />
+
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -337,7 +339,7 @@
             android:layout_height="56dp"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal"
-            android:background="#FFFFFF"
+            android:background="@color/cream_bg"
             android:padding="8dp">
 
             <!-- Add icons or buttons for navigation -->

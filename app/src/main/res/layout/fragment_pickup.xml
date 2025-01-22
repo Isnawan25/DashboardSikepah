@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,12 +24,14 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="16dp" />
 
+    </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/cream_bg"
             android:orientation="vertical"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="80dp"
             android:padding="16dp">
 
             <!-- Jenis Sampah Section -->
@@ -37,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/hijau"
                 android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:padding="16dp">
 
                 <TextView
@@ -44,6 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:text="Jenis Sampah"
+                    android:textSize="@dimen/_16sdp"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -161,7 +166,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/_24sdp"
                 android:background="@color/hijau"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
@@ -177,9 +182,10 @@
 
                 <Button
                     android:id="@+id/kurang"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:background="@drawable/button_kurang" />
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:background="@drawable/button_kurang"
+                    android:contentDescription="Kurangi berat sampah"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -189,10 +195,11 @@
                     android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:background="@drawable/button_plus"
-                    android:backgroundTint="@color/white" />
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="tambahkan berat sampah"/>
             </LinearLayout>
 
             <!-- Next Button -->
@@ -205,6 +212,5 @@
                 android:text="Next"
                 android:textColor="@color/white" />
         </LinearLayout>
-    </RelativeLayout>
+    </FrameLayout>
 
-</FrameLayout>
