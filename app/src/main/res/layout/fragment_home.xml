@@ -17,20 +17,20 @@
             android:layout_height="wrap_content"
             android:text="SiKepah"
             android:textColor="#FFFFFF"
-            android:textSize="24sp"
+            android:textSize="@dimen/_32sdp"
             android:textStyle="bold"
-            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_32sdp"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="@dimen/_4sdp" />
 
         <ImageView
             android:id="@+id/ivProfile"
-            android:layout_width="100dp"
-            android:layout_height="42dp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_42sdp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:src="@drawable/ic_profile" />
     </RelativeLayout>
 
@@ -46,8 +46,7 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/bottomNavigationBar"
             android:background="@color/cream_bg"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:padding="16dp">
+            android:padding="@dimen/_16sdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -60,16 +59,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/_16sdp"
                     android:background="@color/hijau"
-                    android:padding="16dp">
+                    android:padding="@dimen/_16sdp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Order Baru"
                         android:textStyle="bold"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_18ssp"
                         android:textColor="#FFFFFF" />
 
                     <TextView
@@ -84,16 +83,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/_16sdp"
                     android:background="@color/hijau"
-                    android:padding="16dp">
+                    android:padding="@dimen/_16sdp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Riwayat Order"
                         android:textStyle="bold"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/_18ssp"
                         android:textColor="#FFFFFF" />
 
                     <TextView
@@ -114,7 +113,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="16dp">
+                    android:layout_marginTop="@dimen/_16sdp">
 
                     <!-- Organik -->
                     <LinearLayout
@@ -122,9 +121,10 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:background="@drawable/rectangle_organik"
-                        android:padding="16dp"
+                        android:padding="@dimen/_16sdp"
                         android:id="@+id/layoutOrganik"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -138,13 +138,13 @@
                                 android:layout_weight="1"
                                 android:text="ORGANIK"
                                 android:textStyle="bold"
-                                android:textSize="16sp"
+                                android:textSize="@dimen/_16ssp"
                                 android:textColor="#FFFFFF" />
 
                             <ImageView
                                 android:id="@+id/ivArrowOrganik"
-                                android:layout_width="24dp"
-                                android:layout_height="24dp"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
                                 android:src="@drawable/ic_arrow_up"
                                 />
                         </LinearLayout>
@@ -153,7 +153,7 @@
                             android:id="@+id/tvDeskripsiOrganik"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="@dimen/_8sdp"
                             android:text="Deskripsi sampah organik..."
                             android:textColor="#FFFFFF"
                             android:visibility="gone" />
@@ -165,9 +165,10 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:background="@drawable/rectangle_anorganik"
-                        android:padding="16dp"
+                        android:padding="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
                         android:id="@+id/layoutAnorganik"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginBottom="@dimen/_8sdp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -181,13 +182,13 @@
                                 android:layout_weight="1"
                                 android:text="ANORGANIK"
                                 android:textStyle="bold"
-                                android:textSize="16sp"
+                                android:textSize="@dimen/_16ssp"
                                 android:textColor="#FFFFFF" />
 
                             <ImageView
                                 android:id="@+id/ivArrowAnorganik"
-                                android:layout_width="24dp"
-                                android:layout_height="24dp"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
                                 android:src="@drawable/ic_arrow_up"
                                 />
                         </LinearLayout>
@@ -196,7 +197,7 @@
                             android:id="@+id/tvDeskripsiAnorganik"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="@dimen/_8sdp"
                             android:text="Deskripsi sampah Anorganik..."
                             android:textColor="#FFFFFF"
                             android:visibility="gone" />
@@ -207,9 +208,10 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:background="@drawable/rectangle_sampahb3"
-                        android:padding="16dp"
+                        android:padding="@dimen/_16ssp"
+                        android:layout_marginTop="@dimen/_12sdp"
                         android:id="@+id/layoutSampahB3"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginBottom="@dimen/_8sdp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -223,13 +225,13 @@
                                 android:layout_weight="1"
                                 android:text="SAMPAH B3"
                                 android:textStyle="bold"
-                                android:textSize="16sp"
+                                android:textSize="@dimen/_16ssp"
                                 android:textColor="#FFFFFF" />
 
                             <ImageView
                                 android:id="@+id/ivArrowSampahB3"
-                                android:layout_width="24dp"
-                                android:layout_height="24dp"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
                                 android:src="@drawable/ic_arrow_up"
                                 />
                         </LinearLayout>
@@ -238,7 +240,7 @@
                             android:id="@+id/tvDeskripsiSampahB3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="@dimen/_8sdp"
                             android:text="Deskripsi sampah b3..."
                             android:textColor="#FFFFFF"
                             android:visibility="gone" />
@@ -249,9 +251,10 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:background="@drawable/rectangle_sampahkertas"
-                        android:padding="16dp"
+                        android:padding="@dimen/_16ssp"
+                        android:layout_marginTop="@dimen/_12sdp"
                         android:id="@+id/layoutSampahKertas"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginBottom="@dimen/_8sdp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -265,13 +268,13 @@
                                 android:layout_weight="1"
                                 android:text="SAMPAH KERTAS"
                                 android:textStyle="bold"
-                                android:textSize="16sp"
+                                android:textSize="@dimen/_16ssp"
                                 android:textColor="#FFFFFF" />
 
                             <ImageView
                                 android:id="@+id/ivArrowSampahKertas"
-                                android:layout_width="24dp"
-                                android:layout_height="24dp"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
                                 android:src="@drawable/ic_arrow_up"
                                 />
                         </LinearLayout>
@@ -280,7 +283,7 @@
                             android:id="@+id/tvDeskripsiSampahKertas"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="@dimen/_8sdp"
                             android:text="Deskripsi sampah Kertas..."
                             android:textColor="#FFFFFF"
                             android:visibility="gone" />
@@ -292,8 +295,9 @@
                         android:orientation="vertical"
                         android:background="@drawable/rectangle_sampahresidu"
                         android:padding="16dp"
+                        android:layout_marginTop="@dimen/_12sdp"
                         android:id="@+id/layoutSampahResidu"
-                        android:layout_marginBottom="8dp">
+                        android:layout_marginBottom="@dimen/_8sdp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -307,13 +311,13 @@
                                 android:layout_weight="1"
                                 android:text="SAMPAH RESIDU"
                                 android:textStyle="bold"
-                                android:textSize="16sp"
+                                android:textSize="@dimen/_16ssp"
                                 android:textColor="#FFFFFF" />
 
                             <ImageView
                                 android:id="@+id/ivArrowSampahResidu"
-                                android:layout_width="24dp"
-                                android:layout_height="24dp"
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
                                 android:src="@drawable/ic_arrow_up"
                                 />
                         </LinearLayout>
@@ -322,7 +326,7 @@
                             android:id="@+id/tvDeskripsiSampahResidu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="@dimen/_8sdp"
                             android:text="Deskripsi sampah residu..."
                             android:textColor="#FFFFFF"
                             android:visibility="gone" />
@@ -336,11 +340,11 @@
         <LinearLayout
             android:id="@+id/bottomNavigationBar"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="@dimen/_56sdp"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal"
             android:background="@color/cream_bg"
-            android:padding="8dp">
+            android:padding="@dimen/_16sdp">
 
             <!-- Add icons or buttons for navigation -->
         </LinearLayout>

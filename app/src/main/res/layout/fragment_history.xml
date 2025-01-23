@@ -17,11 +17,11 @@
             android:layout_height="wrap_content"
             android:text="Riwayat"
             android:textColor="#FFFFFF"
-            android:textSize="24sp"
+            android:textSize="@dimen/_24ssp"
             android:textStyle="bold"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="@dimen/_10sdp" />
 
 
     </RelativeLayout>
