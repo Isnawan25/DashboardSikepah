@@ -46,7 +46,7 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/bottomNavigationBar"
             android:background="@color/cream_bg"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:padding="16dp">
 
             <LinearLayout
